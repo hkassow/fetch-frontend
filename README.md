@@ -16,7 +16,7 @@ Create a user
 
 ## Details 
 
-The form requires that all inputs are filled, both passwords match, and that emails follow the pattern string@string (where string is any string with length 1 or greater
+The form requires that all inputs are filled, both passwords match, and that emails follow the pattern string@string (where string is any string with length 1 or greater)
 
 The occupation and state inputs allow for searching through the choices
 
