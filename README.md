@@ -4,8 +4,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Project Summary
 
-This project was created for as a take-home assignment to showcase user creation.
-
 To test fork the project onto your local machine
 
 Run `npm install` => install necessary dependencies
