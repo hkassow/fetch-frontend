@@ -18,6 +18,6 @@ Create a user
 
 The form validates that all inputs are filled and that both passwords match
 
-For the occupation and state inputs you can type into the input box to filter through the results and quickly find the required choices
+The occupation and state inputs allow for searching through the choices
 
 Upon succesful creation the user will be navigated to a congratulation page 
