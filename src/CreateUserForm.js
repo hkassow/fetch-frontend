@@ -16,6 +16,7 @@ const CreateUserForm = () => {
         occupation: '',
         state: ''
     })
+    
     const [errors, setErrors] = useState({
         name: '',
         email: '',
@@ -36,6 +37,7 @@ const CreateUserForm = () => {
             }
         })
       },[])
+
       const changeFormData = (target) => {
         const [id, value] = [target.id, target.value]
         setErrors({...errors, [id]: ''})
@@ -80,7 +82,6 @@ const CreateUserForm = () => {
         } else if (formData['password'] != duplicatePass) {
             valid = false
             newErrors['password'] = 'Passwords must match'
-            newErrors['duplicatePass'] = 'Passwords must match'
         }
         if (!formData['occupation']) {
             valid = false
@@ -93,11 +94,11 @@ const CreateUserForm = () => {
         setErrors(newErrors)
         return valid
     }
-    
+
     return (
         <>
         <div className='create-form-container'>
-        <div className='form-header'> Create an account</div>
+            <div className='form-header'> Create an account</div>
             <form className='create-form' onSubmit={handleFormSubmit}>
                 {errors['name'] && <span className='error'>{errors['name']}</span>}
                 <div className='select-search-container' >
