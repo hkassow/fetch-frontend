@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Fetch Rewards take-home assignment
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This project was created for as a take-home assignment to showcase user creation.
 
-To test fork the project into onto your local machine
+To test fork the project onto your local machine
 
 Run `npm install` => install necessary dependencies
 
@@ -16,7 +16,7 @@ Create a user
 
 ## Details 
 
-The form validates that all inputs are filled and that both passwords match
+The form requires that all inputs are filled and that both passwords match
 
 The occupation and state inputs allow for searching through the choices
 
