@@ -1,22 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-
+import CreateUserForm from './CreateUserForm';
+import ThankYou from './ThankYou';
+import {useEffect } from 'react';
+import {BrowserRouter, Link, Routes, Route} from 'react-router-dom'
 function App() {
+
+
   return (
     <div className="App">
+      <div id='fetch-header'>Fetch Rewards</div>  
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<CreateUserForm/>}></Route>
+            <Route path='/congratulations' element={<ThankYou/>}></Route>
+          </Routes>
+        </BrowserRouter>
       </header>
     </div>
   );
