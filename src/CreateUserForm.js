@@ -16,7 +16,7 @@ const CreateUserForm = () => {
         occupation: '',
         state: ''
     })
-    
+
     const [errors, setErrors] = useState({
         name: '',
         email: '',
@@ -75,6 +75,9 @@ const CreateUserForm = () => {
         if (!formData['email']) {
             valid = false
             newErrors['email'] = 'Please enter your email'
+        } else if (!formData['email'].match(/^\S+@\S+$/)) {
+            valid = false
+            newErrors['email'] = 'Please enter a valid email'
         }
         if (!formData['password']) {
             valid = false
